@@ -130,6 +130,18 @@
               clip-rule="evenodd"
             />
           </svg>
+          <svg
+            v-if="contributor.autojoined"
+            v-tippy="{
+              content:
+                'This player joined via autojoin.',
+            }"
+            class="h-3.5 w-3.5 flex-shrink-0 text-blue-300 cursor-help"
+            viewBox="0 0 20 20"
+            >
+            <path stroke-width="1" fill="currentColor" d="M 9.983 0.069 C 2.341 0.107 -2.394 8.418 1.462 15.027 C 5.317 21.636 14.872 21.588 18.659 14.939 C 22.423 8.33 17.683 0.107 10.086 0.069 L 9.983 0.069 Z" />
+            <path stroke-width="1" fill="currentColor" d="M 10.035 0.069 L 10.035 19.955 M 19.963 10.012 L 0.106 10.012 M 2.346 3.893 C 6.947 7.18 13.123 7.18 17.723 3.893 M 17.723 16.131 C 13.123 12.844 6.947 12.844 2.346 16.131 M 9.272 0.323 C 3.25 5.416 3.25 14.709 9.272 19.802 M 10.799 19.802 C 16.82 14.709 16.82 5.416 10.799 0.323" />
+           </svg>
         </td>
         <td v-if="showOptionalColumn.finalized" class="px-4 py-1 whitespace-nowrap text-center text-sm text-gray-500 dark:text-gray-200 tabular-nums">
           <div class="inset-y-0 left-0 pl-2 flex items-center">
